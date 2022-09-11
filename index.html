@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Class Practice</title>
+</head>
+<body>
+
+     
+    <form onsubmit="calculate(); return false">
+        Enter Number <input type="number" id="percen" min="0" max="10">
+        <br><br>
+        <button type="submit"> Compare </button>
+    </form>
+
+    <br>
+    <h2 id="result"> </h2>
+    
+
+    <script>
+
+
+    function calculate(){
+
+
+
+        let RandomNum = Math.floor(Math.random() * 10);
+
+
+        let inputUser = +document.querySelector("#percen").value
+
+        if (RandomNum === inputUser){
+            Com = "You win this match";
+         console.log(RandomNum);
+        console.log("You win this match" );
+        document.querySelector("#result").innerHTML = Com;
+        }
+
+        else {
+            console.log(RandomNum);
+            Com = "try again";
+        console.log("try again" );
+        document.querySelector("#result").innerHTML = Com;
+        }
+
+
+    }
+
+
+    </script>
+</body>
+</html>
